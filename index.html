@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Physiotherapy Clinic</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f8fb;
+            color:#333;
+        }
+
+        header{
+            background:linear-gradient(135deg,#0a6ebd,#22a6f2);
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .logo{
+            width:400px;
+            max-width:90%;
+            margin-bottom:20px;
+        }
+
+        header h1{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+
+        header p{
+            max-width:700px;
+            margin:auto;
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            background:white;
+            color:#0a6ebd;
+            text-decoration:none;
+            padding:15px 35px;
+            border-radius:40px;
+            font-size:18px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#e8f5ff;
+        }
+
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:70px 20px;
+        }
+
+        h2{
+            text-align:center;
+            color:#0a6ebd;
+            margin-bottom:40px;
+            font-size:34px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 10px 25px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card h3{
+            color:#0a6ebd;
+            margin-bottom:15px;
+        }
+
+        .products{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .product{
+            background:white;
+            border-radius:12px;
+            padding:30px;
+            text-align:center;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+        }
+
+        .booking{
+            background:#0a6ebd;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+            border-radius:15px;
+        }
+
+        .booking h2{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .phone{
+            font-size:38px;
+            font-weight:bold;
+            margin:20px 0;
+        }
+
+        footer{
+            background:#023047;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        @media(max-width:700px){
+
+            header h1{
+                font-size:32px;
+            }
+
+            .phone{
+                font-size:30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+
+    <!-- Replace logo.png with your clinic logo -->
+    <img src="Arthrospine.jpg" alt="Arthrospine Logo" class="logo">
+
+    <h1>Arthrospine Physiotherapy & Wellness</h1>
+
+    <p>
+        Professional rehabilitation, chiropractic care, massage therapy,
+        and injury recovery services to help you feel your best.
+    </p>
+
+    <a class="btn" href="tel:4165515007">
+        📞 Call Now to Book
+    </a>
+
+</header>
+
+<section>
+
+    <h2>Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Chiropractic Care</h3>
+            <p>
+                Comprehensive chiropractic treatments focused on relieving pain,
+                improving mobility, and restoring function.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Massage Therapy (RMT)</h3>
+            <p>
+                Registered Massage Therapy to reduce muscle tension,
+                improve circulation, and promote healing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Motor Vehicle Accident (MVA)</h3>
+            <p>
+                Personalized rehabilitation programs for patients recovering
+                from motor vehicle accidents.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Workplace Safety & Insurance Board (WSIB)</h3>
+            <p>
+                Treatment plans designed to help injured workers recover safely
+                and return to work.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Products We Carry</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Compression Stockings</h3>
+            <p>Medical-grade compression stockings for improved circulation.</p>
+        </div>
+
+        <div class="product">
+            <h3>Custom Orthotics</h3>
+            <p>Comfortable orthotics designed to support proper foot alignment.</p>
+        </div>
+
+        <div class="product">
+            <h3>Medical Braces</h3>
+            <p>Knee, ankle, wrist, elbow, shoulder, and back braces.</p>
+        </div>
+
+        <div class="product">
+            <h3>TENS Machines</h3>
+            <p>Portable pain relief devices available for home treatment.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="booking">
+
+        <h2>Book Your Appointment Today</h2>
+
+        <div class="phone">
+            📞 (416) 551-5007
+        </div>
+
+        <p>
+            Call us today to schedule your appointment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Contact Us</h2>
+
+    <div class="card" style="max-width:700px; margin:auto; text-align:center;">
+
+        <h3>📍 Visit Our Clinic</h3>
+
+        <p>
+            3528 Bathurst Street, 
+            Toronto, ON M3H 3P4 <br>
+
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Phone</strong><br>
+            <a href="tel:4165515007">(416) 551-5007</a>
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Email</strong><br>
+            <a href="mailto:arthrospinept@gmail.com">arthrospinept@gmail.com</a>
+        </p>
+
+        <br>
+<!--
+        <p>
+            <strong>Clinic Hours</strong><br>
+            Monday – Friday: 9:00 AM – 7:00 PM<br>
+            Saturday: 9:00 AM – 2:00 PM<br>
+            Sunday: Closed
+        </p>
+    -->
+        <br>
+
+<div style="max-width:1000px; margin:auto; border-radius:12px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,.15);">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.0971101392684!2d-79.43507728783237!3d43.72930947097814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b334d48eaad0d%3A0x1ed508a7d11aeb9a!2sArthrospine%20Physiotherapy%20%26%20Wellness!5e0!3m2!1sen!2sca!4v1784433239405!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Arthrospine Physiotherapy and Wellness. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
